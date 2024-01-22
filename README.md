@@ -2,5 +2,5 @@
 ### Chalenges propostos no programa de formação Oracle One.
 
 
-[01 - Decodificador](pickpaysimplificado)</br>
+[01 - Decodificador](Decodificador)</br>
 
