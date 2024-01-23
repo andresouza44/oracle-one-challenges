@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --fonte-primaria:'Inter', sans-serif;
+
+    --color-primaria: #0A3871;
+    --color-secundaria: #FFFFFF;
+    --color-terciaria: #495057;
+    --color-quartenaria: #D8DFE8;
+
+    --color-backgroud-primaria: #F3F5FC;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    padding: 5% 0 0 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-backgroud-primaria);
+    
+}
+
+.decriptador {
+    display: flex;
+    gap: 80px;
+    
+    
+}
+
+.decriptador__conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0 0 20%;
+    gap: 16px;
+    height: 450px;
+    
+    
+
+}
+
+.decriptador__conteudo_texto{
+    width:500px;
+    height: 450px;
+    background-color:#F3F5FC;
+    font-family: var(--fonte-primaria);
+    color:var(--color-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+    border: none;
+    outline: none
+    
+   
+    
+    
+}
+
+.decriptador__conteudo_texto::placeholder{
+    color:var(--color-primaria);
+}
+
+
+.decriptador__conteudo__detalhe{
+    display: flex;
+    font-family: var(--color-primaria);  
+    font-weight: 400;
+    size: 0.75rem; 
+    color:var(--color-terciaria);
+    gap:5px
+
+}
+
+.decriptador__conteudo__botao{
+    display: flex;
+    justify-content: space-between; 
+    gap: 24px;
+   
+}
+
+.decriptador__conteudo__botao__criptografar{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    
+    padding: 24px 0 24px 0%;
+    border-radius: 24px;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+    border: 1px solid var(--color-primaria);
+    cursor: pointer;
+    
+}
+
+.decriptador__conteudo__botao__decriptografar{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    
+    padding: 24px 0 24px 0%;
+    border-radius: 24px;
+    background-color: var(--color-quartenaria);
+    color: var(--color-primaria);
+    border: 1px solid var(--color-primaria);
+    cursor: pointer;
+ 
+}
+
+.decriptador__resposta{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 0 0;
+    height: 450px;
+    justify-content: space-between;
+    background-color:rgb(241, 241, 241)
+    
+}
+
+.decriptador__resposta__botao{
+    display: none;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    
+    padding: 24px 0 24px 0%;
+    border-radius: 24px;
+    background-color: var(--color-quartenaria);
+    color: var(--color-primaria);
+    border: 1px solid var(--color-primaria);
+    cursor: pointer;
+
+
+
+}
+
+
+
+footer {
+    background-color: var(--color-backgroud-primaria) ;
+    padding: 3.5rem;
+    font-family: var(--font-family-primaria);
+    font-size: 0.75rem;
+    font-weight: 25rem;
+    text-align: center;
+    color: var(--color-primaria);   
+}
