@@ -37,7 +37,7 @@ const criptografarLetra = letra =>{
     const conversao = {
         a: 'ai',
         e: 'enter',
-        i: 'imer',
+        i: 'imes',
         o: 'ober',
         u: 'ufat'
     };
@@ -54,7 +54,7 @@ const decriptografar = texto =>{
         ober:'o',
         ufat:'u',      
     }
-//dentersaifimesober
+
     const substituir = ((padraoProcura,substitui)=>{
         let regex = new RegExp(padraoProcura,'g')
         textoDecriptografado = textoDecriptografado.replace(regex,substitui)
@@ -69,17 +69,8 @@ const decriptografar = texto =>{
     btnCopiar.style.display='block'
     areaRespostaTexto.textContent = textoDecriptografado
 
-    console.log(textoDecriptografado)
 }
-    /*
-    padraoProcura.forEach(padrao =>{
-        let regex = new RegExp(padrao,'g')
-        textoDecriptografado = textoDecriptografado.replace(regex,padrãoSubstitui[padrao])
-        
-    })
-    console.log(textoDecriptografado)
-}
-*/
+   
 
 const copiarTexto = () =>{
     const textoCopia = areaRespostaTexto.textContent
@@ -106,4 +97,4 @@ btnCopiar.addEventListener('click', event =>{
 
 
 })
-//aindrenter mairtimerns denter soberufatzai
+
