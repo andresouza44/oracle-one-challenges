@@ -15,7 +15,10 @@ const btnCopiar = document.querySelector('.decriptador__resposta__botao')
 
 
 
-const criptografar = texto =>{
+const criptografar = () =>{
+    btnCopiar.innerHTML = 'Copiar';
+    let texto = (textArea.value).toLowerCase()
+    if (texto ==='') return
     const vogais = ['a','e','i','o','u']
     let textoArray = Array.from(texto)
     textoArray.forEach( (letra, index) =>{
@@ -30,7 +33,6 @@ const criptografar = texto =>{
     areaRespostaTexto.textContent = textoArray
     btnCopiar.style.display='block'
 
- 
 }
 
 const criptografarLetra = letra =>{
@@ -45,8 +47,11 @@ const criptografarLetra = letra =>{
     return conversao[letra];
 }
 
-const decriptografar = texto =>{
-    let textoDecriptografado = texto
+const decriptografar = () =>{
+    btnCopiar.innerHTML = 'Copiar';
+    let textoDecriptografado = (textArea.value).toLowerCase()
+    if (textoDecriptografado ==='') return
+    
     const padrãoSubstitui = {
         ai:'a',
         enter:'e',
@@ -75,20 +80,18 @@ const decriptografar = texto =>{
 const copiarTexto = () =>{
     const textoCopia = areaRespostaTexto.textContent
     navigator.clipboard.writeText(textoCopia)
-    alert('Texto Copiado para Area de Tranferência')
-
+    btnCopiar.innerHTML = 'Copiado!'
+   
 }
 
 btnCriptografar.addEventListener('click', event =>{
     event.preventDefault()
-    let texto = (textArea.value).toLowerCase()
-    criptografar(texto)
+    criptografar()
 })
 
 btnDecriptografar.addEventListener('click', event =>{
     event.preventDefault()
-    let texto = (textArea.value).toLowerCase()
-    decriptografar(texto)
+    decriptografar()
 })
 
 btnCopiar.addEventListener('click', event =>{

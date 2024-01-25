@@ -31,7 +31,6 @@ body{
     display: flex;
     gap: 80px;
     
-    
 }
 
 .decriptador__conteudo{
@@ -40,7 +39,7 @@ body{
     padding: 4% 0 0 20%;
     gap: 16px;
     height: 450px;
-    
+   
     
 
 }
@@ -98,6 +97,11 @@ body{
     
 }
 
+.decriptador__conteudo__botao__criptografar:hover{
+    background-color: var(--color-quartenaria);
+    color: var(--color-primaria);
+}
+
 .decriptador__conteudo__botao__decriptografar{
     font-family: var(--fonte-primaria);
     font-weight: 400;
@@ -113,34 +117,62 @@ body{
  
 }
 
+
+.decriptador__conteudo__botao__decriptografar:hover{
+    background-color: var(--color-primaria);
+    color: var(--color-quartenaria);
+}
+
 .decriptador__resposta{
     display: flex;
     flex-direction: column;
-
+    margin-right: 20px;
     width: 100%;
-    padding: 5% 15% 0 0;
+    padding: 2% 2% 2% 2%;
     height: 450px;
     justify-content: space-between;
-    background-color:rgb(240, 240, 240);
+    background-color:rgb(228, 228, 228);
+    align-items:normal;
+    border-radius: 32px;
     align-items: center;
-    
+      
     
 }
 
+.decriptador__resposta__texto{
+    font-family: var(--font-family-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 3px ;
+}
+
+.decriptador__resposta__observacao{
+    font-family: var(--font-family-primaria);
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-bottom: 3px ;
+   
+}
+
 .decriptador__resposta__botao{
-    display: inline;
+    display: none;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 1rem;
-
-    width: 75%;
-    
+    width: 100%;
     padding: 24px 10px 24px 0%;
     border-radius: 24px;
     background-color: var(--color-quartenaria);
     color: var(--color-primaria);
     border: 1px solid var(--color-primaria);
     cursor: pointer;
+}
+
+.decriptador__resposta__botao:hover{
+    background-color: var(--color-primaria);
+    color: var(--color-quartenaria);
+
+
 }
 
 footer {
@@ -151,4 +183,52 @@ footer {
     font-weight: 300;
     text-align: center;
     color: var(--color-primaria);   
+}
+
+@media (max-width: 768px) {
+    .decriptador{
+        flex-direction: column;
+        width: fit-content;
+       
+        margin: auto;
+        padding: auto;
+        gap:5px
+    }
+    .decriptador__conteudo{
+        width: fit-content;
+        height: 25%;
+        margin: auto;
+        padding: 1px;
+        
+    }
+    .decriptador__conteudo_texto{
+        width: auto;
+        height: 200px;
+        font-size: 1rem;
+
+    }
+    .decriptador__resposta{ 
+        margin-right: auto;
+        width:90%;
+        padding: 2% 2% 2% 2%;
+        height:300px
+    }
+    
+    .decriptador__resposta__imagem{
+        width: 50%
+    }
+
+    .decriptador__resposta__texto{
+        font-size: 1rem;
+    }
+
+    .decriptador__resposta__observacao{
+        font-size: 0.6rem;
+        
+    }
+
+    .decriptador__resposta__botao{
+        width: 75%;
+
+    }
 }
